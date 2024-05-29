@@ -94,7 +94,7 @@ def get_similar_chunks (question):
                 VECTOR_COSINE_SIMILARITY(information_embeds,
                     snowflake.cortex.embed_text_768('snowflake-arctic-embed-m', ?)) as distance,
                 full_description
-        from wine_reviews
+        from z2c.cortex.wine_reviews
         order by distance desc
         limit ?)
         select full_description from results 
